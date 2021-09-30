@@ -14,6 +14,25 @@
 
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-light" style="color: purple; background-color:lavender;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="plane.html">Plane</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="train.html">Train</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
     <h1>Animals by Prudvi Gundla </h1>
   <div class="container">
     <div class="row" style="background-color:rgb(177, 9, 65);"><p>Goat</p></div>
@@ -23,6 +42,7 @@
     <div class="row" style="background-color:rgb(177, 9, 65);"><p>Labradane</p></div>
     <div class="row" style="background-color:rgb(177, 9, 65);"><p>Akita</p></div>
   </div>
+  <div class="container">
   <div class="row">
     <div class=" col-sm-2" style="background-color:rgb(79, 18, 129);"><p>G</p></div>
     <div class=" col-sm-2" style="background-color:rgb(79, 18, 129);"><p>U</p></div>
@@ -38,6 +58,7 @@
     <div class=" col-md" style="background-color:rgb(11, 150, 73);"><p>Deer</p></div>
     <div class=" col-md" style="background-color:rgb(11, 150, 73);"><p>Labradane</p></div>
     <div class=" col-md" style="background-color:rgb(11, 150, 73);"><p>Akita</p></div>
+  </div>
   </div>
   <p>Animals row breaks first because height and width constraines are exceeded</p>
 
@@ -112,11 +133,11 @@
     </tbody>
   </table>
   <br>
-  <label style="font-size: 1rem; color:black; background-color: green; padding:10px; font-family: Arial, Helvetica, sans-serif;">Button Groups</label>
+  <label style="font-size: 1rem; color:black; background-color: green; padding:10px; font-family: Arial, Helvetica, sans-serif; margin-left:20px;">Button Groups</label>
   <br>
   <br>
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group" role="group" aria-label="success group">
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="padding-left: 20px;"></div>
+  <div class="btn-group" role="group" aria-label="success group" style="padding-left: 20px;">
     <button type="button" class="btn btn-success">G</button>
     <button type="button" class="btn btn-success">U</button>
     <button type="button" class="btn btn-success">N</button>
@@ -128,10 +149,9 @@
   <div class="btn-group" role="group" aria-label="danger group">
     <button type="button" class="btn btn-danger">A</button>
   </div>
-</div>
 <br>
 <br>
-<div class="dropdown">
+<div class="dropdown" style="padding-left: 20px;">
     <div class="btn-group" role="group">
       <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
         Dropdown
@@ -145,5 +165,27 @@
   </div>
   <br>
   <br>
+  <form style="padding-left: 20px;">
+    <div class="form-group">
+      <label for="InputEmail1" class="form-label">&nbsp;Email address</label>
+      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">&nbsp;We'll never share your email with anyone else.</div>
+    </div>
+    <br/>
+    <div class="form-group">
+      <label for="Animal-label-name" class="form-label">&nbsp;Animal</label>
+      <input type="text" id="animalName" class="form-control" placeholder="Enter your animal">
+    </div>
+    <br/>
+    <div class="form-check">
+      <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+  <br>
+
 </body>
 </html>
